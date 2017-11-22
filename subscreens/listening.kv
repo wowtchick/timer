@@ -1,0 +1,22 @@
+<Listening>:
+    name: "listening"
+    BoxLayout:
+        orientation:'vertical'
+        Button:
+            id: return_b
+            text: '<= Back'
+            on_release: app.root.current = "main"
+        Label:
+            text: 'Listening'
+        Label:
+            id: time_l
+            font_size: dp(50)
+            text: '00:10:00'
+        Button:
+            id: start_t_b
+            text: 'start/continue'
+            on_release: root.start_continue()
+        Button:
+            id: reset_b
+            text: 'reset'
+            on_release: root.reset()

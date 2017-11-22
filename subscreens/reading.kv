@@ -1,0 +1,22 @@
+<Reading>:
+    name : "reading"
+    BoxLayout:
+        orientation:'vertical'
+        Button:
+            id: return_b
+            text: '<= Back'
+            on_release: app.root.current = "main"
+        Label:
+            text: 'Reading/Writing'
+        Label:
+            id: time_l
+            font_size: dp(50)
+            text: '01:00:00'
+        Button:
+            id: start_t_b
+            text: 'start/continue'
+            on_release: root.start_continue()
+        Button:
+            id: reset_b
+            text: 'reset'
+            on_release: root.reset()

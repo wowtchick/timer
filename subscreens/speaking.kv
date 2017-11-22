@@ -1,0 +1,26 @@
+<Speaking>:
+    name: "speaking"
+    BoxLayout:
+        orientation:'vertical'
+        Button:
+            id: return_b
+            text: '<= Back'
+            on_release: app.root.current = "main"
+        Label:
+            text: 'Speaking'
+        Label:
+            id: time_l
+            font_size: dp(50)
+            text: '00:00:00'
+        Button:
+            id: start_t_b
+            text: 'start/stop thinking'
+            on_release: root.start_stop_thinking()
+        Button:
+            id: start_s_b
+            text: 'start/stop speaking'
+            on_release: root.start_stop_speaking()
+        Button:
+            id: reset_b
+            text: 'reset'
+            on_release: root.reset()

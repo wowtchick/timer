@@ -1,0 +1,18 @@
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+<MainScreen>:
+    name: "main"
+    orientation:'vertical'
+    BoxLayout:
+        orientation:'vertical'
+        Button:
+            id: listening_b
+            text: 'Listening'
+            on_release: root.manager.current = "listening"
+        Button:
+            id: reading_b
+            text: 'Reading/Writing'
+            on_release: root.manager.current = "reading"
+        Button:
+            id: speakin_b
+            text: 'Speaking'
+            on_release: root.manager.current = "speaking"
